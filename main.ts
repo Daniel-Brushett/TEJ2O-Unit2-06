@@ -2,20 +2,20 @@
  *
  * Created by: Daniel Brushett
  * Created on: 02/26/26
- * This program ...
+ * This program 
 */
 
 // start
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
-// Effect A
+// on Button A
 input.onButtonPressed(Button.A, function() {
     basic.showIcon(IconNames.Yes)
     pins.digitalWritePin(DigitalPin.P16, 1)
 })
 
-// Effect B
+// on button B
 input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.No)
     pins.digitalWritePin(DigitalPin.P16, 0)
